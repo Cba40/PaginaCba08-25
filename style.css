@@ -1,13 +1,87 @@
+:root {
+    --primary: #660000; 
+    --body-paragraph-bold: 700 1rem/normal 'Poppins', sans-serif; 
+    --body-paragraph-regular: 400 1rem/normal 'Poppins', sans-serif; 
+    --body-small-bold: 700 0.875rem/normal 'Poppins', sans-serif; 
+    --body-small-regular: 400 0.875rem/normal 'Poppins', sans-serif; 
+    --heading-display6-regular: 400 2.5rem/normal 'Poppins', sans-serif; 
+    --heading-h2-bold: 700 2rem/normal 'Poppins', sans-serif; 
+    --heading-display1-regular: 400 5rem/normal 'Inter', sans-serif; 
+    --body-lead-regular: 400 1.25rem/normal 'Poppins', sans-serif; 
+    --headings-h2-medium: 500 2rem/normal 'Poppins', sans-serif; 
+}
+/* Flexbox para el contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px; /* Espaciado interno */
+    gap: 80px; /* Espaciado entre los elementos */
+}
+
+/* Contenedor del texto */
+.contenedor-texto {
+    flex: 1; /* Permite que el contenedor de texto ocupe espacio */
+    max-width: 40%; /* Limita el ancho máximo del contenedor de texto */
+}
+
+/* Contenedor de la imagen */
+.contenedor-imagen {
+    flex: 1; /* Permite que el contenedor de la imagen ocupe espacio */
+    max-width: 100%; /* Limita el ancho máximo del contenedor de la imagen */
+    display: flex; /* Usar flexbox en el contenedor de la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Imagen alineada a la derecha */
+.imagen-derecha {
+    width: 120%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 600px; /* Ajusta el alto máximo de la imagen */
+    border-top-left-radius: 100px; /* Bordes redondeados */
+    border-bottom-left-radius: 100px; /* Bordes redondeados */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+/* Estilos del título */
+.titulo {
+    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
+    font-size: 3rem; /* Tamaño del título */
+    font-weight: 700; /* Negrita */
+    color: #660000; /* Color primario */
+    margin-bottom: 50px;
+    margin-left: 20%; /* Ajusta este valor para desplazar más hacia el centro */
+}
+
+/* Estilos del subtítulo */
+.subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400; /* Regular */
+    margin-bottom: 50px;
+}
+
+/* Estilos del texto */
+.texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 50px;
+}
+
+/* Reseteo de márgenes y relleno */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html, body {
+}
+
+/* Estilos generales */
+html, body {
     height: 100%;
-    font-family: 'Poppins', sans-serif; 
-  }
+    font-family: 'Poppins', sans-serif;
+}
 
 /*----HEADER----*/
 
@@ -65,26 +139,6 @@ button:hover {
 
 /*----FOOTER----*/
 
-footer {
-    width: 100%;
-    height: auto; 
-    background: #FAD201; 
-    padding: 5% 10%;
-}
-
-
-/*----clases----*/
-/*----header----*/
-
-.separator {
-    border: none; 
-    height: 2px; 
-    background-color: #000; 
-    margin-top: 1rem; 
-}
-
-/*----footer----*/
-
 .article-content {
     display: flex;
     flex-direction: column; 
@@ -96,6 +150,7 @@ footer {
     font-size: 4vw; 
     font-weight: 400; 
     color: black;
+    text-align: center;
     margin: 0; 
     margin-bottom: 1rem; 
     white-space: nowrap; 
@@ -106,21 +161,35 @@ footer {
 }
 
 .article-description {
-    color: black; 
+    color: black;
     font-size: 1.5vw;
     font-weight: 400;
-    word-wrap: break-word; 
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     text-align: center; 
-    max-width: 90%; 
-    margin: 0; 
+    max-width: 90%; /* Puedes ajustar esto si es necesario */
+    margin: 0;
+   
 }
 
-.social-links {
+/* Footer styling */
+footer {
+    width: 100%; /* Mantiene el ancho completo del footer */
+    background-color: #e5b800; /* Color amarillo */
+    padding: 10px 0; /* Reducir el padding vertical (arriba y abajo) */
     display: flex;
-    justify-content: center; 
-    gap: 2rem; 
-    padding: 0; 
-    margin-top: 2rem; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo para enlaces sociales */
+.social-links {
+    max-width: 600px; /* Limita el ancho de los enlaces sociales */
+    display: flex;
+    justify-content: space-between; /* Distribuye los íconos de forma equitativa */
+    width: 100%; /* Se asegura de que los íconos ocupen el ancho del contenedor */
+    gap: 1rem; /* Ajusta el espacio entre los íconos */
+    margin-top: 1rem; /* Reduce el espacio superior */
 }
 
 .social-link {
