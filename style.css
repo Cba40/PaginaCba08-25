@@ -1,15 +1,16 @@
 :root {
     --primary: #660000; 
-    --body-paragraph-bold: 700 1rem/normal 'Poppins', sans-serif; 
-    --body-paragraph-regular: 400 1rem/normal 'Poppins', sans-serif; 
-    --body-small-bold: 700 0.875rem/normal 'Poppins', sans-serif; 
-    --body-small-regular: 400 0.875rem/normal 'Poppins', sans-serif; 
-    --heading-display6-regular: 400 2.5rem/normal 'Poppins', sans-serif; 
-    --heading-h2-bold: 700 2rem/normal 'Poppins', sans-serif; 
-    --heading-display1-regular: 400 5rem/normal 'Inter', sans-serif; 
-    --body-lead-regular: 400 1.25rem/normal 'Poppins', sans-serif; 
-    --headings-h2-medium: 500 2rem/normal 'Poppins', sans-serif; 
+    --body-paragraph-bold: 700 1rem/normal 'Open Sans', sans-serif; 
+    --body-paragraph-regular: 400 1rem/normal 'Open Sans', sans-serif; 
+    --body-small-bold: 700 0.875rem/normal 'Open Sans', sans-serif; 
+    --body-small-regular: 400 0.875rem/normal 'Open Sans', sans-serif; 
+    --heading-display6-regular: 400 2.5rem/normal 'Open Sans', sans-serif; 
+    --heading-h2-bold: 700 2rem/normal 'Open Sans', sans-serif; 
+    --heading-display1-regular: 400 5rem/normal 'Open Sans', sans-serif; 
+    --body-lead-regular: 400 1.25rem/normal 'Open Sans', sans-serif; 
+    --headings-h2-medium: 500 2rem/normal 'Open Sans', sans-serif; 
 }
+
 /* Flexbox para el contenedor principal */
 .contenedor-principal {
     display: flex;
@@ -46,17 +47,17 @@
 
 /* Estilos del título */
 .titulo {
-    font-family: 'Poppins', sans-serif; /* Fuente personalizada */
-    font-size: 3rem; /* Tamaño del título */
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
+    font-size: 5rem; /* Tamaño del título */
     font-weight: 700; /* Negrita */
     color: #660000; /* Color primario */
     margin-bottom: 50px;
     margin-left: 20%; /* Ajusta este valor para desplazar más hacia el centro */
 }
 
-/* Estilos del subtítulo */
+
 .subtitulo {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
     font-size: 1.75rem;
     font-weight: 400; /* Regular */
     margin-bottom: 50px;
@@ -64,7 +65,7 @@
 
 /* Estilos del texto */
 .texto {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
     font-size: 1rem; /* Tamaño del texto */
     line-height: 1.6; /* Espaciado entre líneas */
     margin-bottom: 50px;
@@ -80,7 +81,7 @@
 /* Estilos generales */
 html, body {
     height: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
 }
 
 /*----HEADER----*/
@@ -96,12 +97,25 @@ nav img {
     margin-right: 2rem; 
 }
 
+/* separator*/
+.separator {
+    border: none; /* Elimina el borde predeterminado */
+    height: 2px; /* Altura del separador */
+    background-color: white; /* Color del separador */
+    margin: 20px; /* Espaciado vertical */
+    width: 150%; /* Ancho del separador */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+
 ul {
     list-style-type: none; 
     padding: 0; 
     margin: 0; 
     display: flex; 
-    gap: 20px; 
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    width: 70%; /* Ocupa todo el ancho disponible */ 
   }
 
 ul li a {
@@ -111,12 +125,12 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #FAD201; 
+    color: #ecc810; 
 }
 
 button {
     padding: 10px 16px; 
-    background-color: #FAD201; 
+    background-color: #ecc810; 
     border-radius: 10px; 
     display: flex; 
     justify-content: center; 
@@ -124,7 +138,7 @@ button {
     gap: 10px; 
     color: black; 
     font-size: 16px; 
-    font-weight: 700; 
+    font-weight: 700; /*negrita*/
     border: none; 
     cursor: pointer; 
     width: auto; 
@@ -134,7 +148,7 @@ button {
 }
 
 button:hover {
-    background-color: #e5b800; 
+    background-color: #ecc810; 
 }
 
 /*----FOOTER----*/
@@ -174,7 +188,7 @@ button:hover {
 /* Footer styling */
 footer {
     width: 100%; /* Mantiene el ancho completo del footer */
-    background-color: #e5b800; /* Color amarillo */
+    background-color: #ecc810; /* Color amarillo */
     padding: 10px 0; /* Reducir el padding vertical (arriba y abajo) */
     display: flex;
     justify-content: center;
