@@ -151,6 +151,23 @@ button:hover {
     background-color: #ecc810; 
 }
 
+.contenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente al centro */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+}
+
+.contenedor-imagen {
+    flex: 1; /* Permite que el contenedor de la imagen ocupe espacio */
+    max-width: 40%; /* Limita el ancho máximo del contenedor de la imagen */
+}
+
+.contenedor-imagen img {
+    width: 100%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
 /*----FOOTER----*/
 
 .article-content {
@@ -202,7 +219,7 @@ footer {
     display: flex;
     justify-content: space-between; /* Distribuye los íconos de forma equitativa */
     width: 100%; /* Se asegura de que los íconos ocupen el ancho del contenedor */
-    gap: 1rem; /* Ajusta el espacio entre los íconos */
+    gap: 50rem; /* Ajusta el espacio entre los íconos */
     margin-top: 1rem; /* Reduce el espacio superior */
 }
 
