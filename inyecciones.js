@@ -1,6 +1,6 @@
 window.onload = function() {
     // Cargar el contenido de header.html
-    fetch('header.html')
+    fetch('plantillas/header.html')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error en la carga del header');
@@ -12,7 +12,7 @@ window.onload = function() {
             document.getElementById('header-container').innerHTML = data;
 
             // Cargar el contenido de footer.html dentro del bloque then del header
-            return fetch('footer.html');
+            return fetch('plantillas/footer.html');
         })
         .then(response => {
             if (!response.ok) {

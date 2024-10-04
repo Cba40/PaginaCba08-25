@@ -1,0 +1,118 @@
+@import url(header.css);
+@import url(footer.css);
+
+
+:root {
+    --primary: #660000; 
+    --body-paragraph-bold: 700 1rem/normal 'Open Sans', sans-serif; 
+    --body-paragraph-regular: 400 1rem/normal 'Open Sans', sans-serif; 
+    --body-small-bold: 700 0.875rem/normal 'Open Sans', sans-serif; 
+    --body-small-regular: 400 0.875rem/normal 'Open Sans', sans-serif; 
+    --heading-display6-regular: 400 2.5rem/normal 'Open Sans', sans-serif; 
+    --heading-h2-bold: 700 2rem/normal 'Open Sans', sans-serif; 
+    --heading-display1-regular: 400 5rem/normal 'Open Sans', sans-serif; 
+    --body-lead-regular: 400 1.25rem/normal 'Open Sans', sans-serif; 
+    --headings-h2-medium: 500 2rem/normal 'Open Sans', sans-serif; 
+}
+
+/* Flexbox para el contenedor principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px; /* Espaciado interno */
+    gap: 80px; /* Espaciado entre los elementos */
+}
+
+/* Contenedor del texto */
+.contenedor-texto {
+    flex: 1; /* Permite que el contenedor de texto ocupe espacio */
+    max-width: 40%; /* Limita el ancho máximo del contenedor de texto */
+}
+
+/* Contenedor de la imagen */
+.contenedor-imagen {
+    flex: 1; /* Permite que el contenedor de la imagen ocupe espacio */
+    max-width: 100%; /* Limita el ancho máximo del contenedor de la imagen */
+    display: flex; /* Usar flexbox en el contenedor de la imagen */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+/* Imagen alineada a la derecha */
+.imagen-derecha {
+    width: 120%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 600px; /* Ajusta el alto máximo de la imagen */
+    border-top-left-radius: 100px; /* Bordes redondeados */
+    border-bottom-left-radius: 100px; /* Bordes redondeados */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+}
+
+/* Estilos del título */
+.titulo {
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
+    font-size: 5rem; /* Tamaño del título */
+    font-weight: 700; /* Negrita */
+    color: #660000; /* Color primario */
+    margin-bottom: 50px;
+    margin-left: 20%; /* Ajusta este valor para desplazar más hacia el centro */
+}
+
+
+.subtitulo {
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
+    font-size: 1.75rem;
+    font-weight: 400; /* Regular */
+    margin-bottom: 50px;
+}
+
+/* Estilos del texto */
+.texto {
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
+    font-size: 1rem; /* Tamaño del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 50px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px; 
+}    
+
+.contenedor-imagen {
+    flex: 1; 
+    max-width: 40%; 
+}
+
+.contenedor-imagen img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Reseteo de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+html, body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif; /* Fuente actualizada */
+}
+
+
+
+/*----FOOTER----*/
+
+
+
+/* Footer styling */
+
+
+/* Estilo para enlaces sociales */
+
