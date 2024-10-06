@@ -39,19 +39,21 @@ section p {
 }
 
 footer nav {
-    width: 50%; 
+    width: 100%; 
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     margin-top: 0.5rem; 
 }
 
 footer ul {
     display: flex; 
+    justify-content: center;
     align-items: center; 
     color: black; 
     font-size: 1.5vw; 
     font-weight: 400; 
     text-decoration: none; 
+    gap: 1rem;
 }
 
 footer ul li a img {
@@ -69,10 +71,10 @@ footer ul li a:hover img[src*='logo-whatsapp'] {
     content: url('/imagenes/icons/logo-whatsapp-white.png'); 
 }
 
-footer ul li a:hover img[src*='logo-facebook'] {
-    content: url('/imagenes/icons/logo-facebook-white.png'); 
-}
-
 footer ul li a:hover img[src*='logo-instagram'] {
     content: url('/imagenes/icons/logo-instagram-white.png'); 
 }
+/*
+footer ul li a:hover img[src*='logo-instagram'] {
+    content: url('/imagenes/icons/logo-instagram-white.png'); 
+}*/

@@ -1,0 +1,61 @@
+.main-comtainer {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.derecha {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.derecha img {
+
+    max-width: 100%;                    
+    max-height: 100%;                   
+    object-fit: contain;                
+    margin: 0.2rem 0 0.1rem 0;          
+    border-radius: 5rem 0 0 5rem;       
+    border-left: 0.3125rem solid #FAD201; 
+    border-bottom: 0.3125rem solid #FAD201;
+}
+
+.izquierda {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.izquierda h1 {
+
+    text-align: center;
+    font-size: 4rem;
+    color: #660000;
+}
+
+.izquierda h2 {
+
+    text-align: start;           
+    padding-left: 3.125rem;      
+    margin-top: 0.625rem;        
+    font-size: 2rem;             
+    font-weight: 700;            
+    color: black;
+}
+
+.izquierda p {
+
+    text-align: start;
+    padding-left: 1.125rem;
+    color: black;
+    line-height: 1.5;
+}
