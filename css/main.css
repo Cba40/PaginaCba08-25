@@ -38,14 +38,13 @@
 .izquierda h1 {
 
     text-align: center;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #660000;
 }
 
 .izquierda h2 {
 
-    text-align: start;           
-    padding-left: 3.125rem;      
+    text-align: center;      
     margin-top: 0.625rem;        
     font-size: 2rem;             
     font-weight: 700;            
@@ -55,7 +54,7 @@
 .izquierda p {
 
     text-align: start;
-    padding-left: 1.125rem;
+    padding-left: 3rem;
     color: black;
     line-height: 1.5;
 }
