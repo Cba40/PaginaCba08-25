@@ -1,0 +1,64 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de servicios */
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título de servicios */
+.servicios-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #660000;
+    text-align: center;
+    width: 100%;
+}
+
+/* Grid de servicios */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* Estilos para cada servicio */
+.servicio {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .grid-servicios {
+        grid-template-columns: 1fr;
+    }
+}
