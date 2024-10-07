@@ -25,9 +25,14 @@ body {
 }
 
 .contenedor-imagen img {
-    width: 100%;
-    max-width: 20rem;
-    height: auto;
+    max-width: 100%;                    
+    max-height: 100%;                   
+    object-fit: contain;                
+    margin: 0.2rem 0 0.1rem 0;          
+    border-radius:5 rem 0 5 rem 0;       
+    border: 0.3125rem solid #FAD201; 
+    border-bottom: 0.3125rem solid #FAD201;
+
 }
 
 .contenedor-texto {
