@@ -1,0 +1,47 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Ajusta el espacio entre elementos */
+    height: 100vh;
+    min-height: 100vh;
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+.contenedor-imagen, .contenedor-texto {
+    display: flex;
+    flex-direction: column; /* Para que el texto se apile debajo de la imagen en pantallas pequeñas */
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.contenedor-imagen img {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+}
+
+.contenedor-texto {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .contenedor-texto {
+        font-size: 1.2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        line-height: 1.5;
+    }
+}
