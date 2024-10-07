@@ -12,7 +12,7 @@ body {
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 1.5rem;
     padding: 2rem;
-    justify-items: center; /* Centra las imágenes y productos */
+    justify-items: center; 
 }
 
 .producto {
@@ -24,11 +24,13 @@ body {
 }
 
 .producto img {
-    width: 20rem; /* Tamaño de la imagen */
-    height: 20rem; /* Mantén la imagen cuadrada */
-    border-radius: 50%; /* Hace las imágenes circulares */
-    object-fit: cover; /* Asegura que la imagen se ajuste al área circular */
+    width: 20rem; 
+    height: 20rem; 
+    border-radius: 50%; 
+    object-fit: cover; 
     display: block;
+    border: 0.3125rem solid #FAD201; 
+    border-bottom: 0.3125rem solid #FAD201;
 }
 
 .producto p {
@@ -40,6 +42,6 @@ body {
 /* Estilo para pantallas pequeñas */
 @media (max-width: 600px) {
     .productos-grid {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr; 
     }
 }
