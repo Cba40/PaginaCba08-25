@@ -1,7 +1,9 @@
 /* Estilos generales */
 body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
+    font-family: 'Poppins', 'Open Sans', sans-serif; 
+    color: #660000;
+    width: 100vw;
+    height: 100vh;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -29,14 +31,24 @@ body {
     max-height: 100%;                   
     object-fit: contain;                
     margin: 0.2rem 0 0.1rem 0;          
-    border-radius:5 rem 0 5 rem 0;       
+    border-radius: 5rem; /* Redondea ligeramente los bordes */
     border: 0.3125rem solid #FAD201; 
     border-bottom: 0.3125rem solid #FAD201;
-
 }
 
 .contenedor-texto {
     text-align: center;
+}
+
+.contenedor-texto h2 {
+    font-size: 2rem; /* Aumenta el tamaño de la letra del título */
+    margin-bottom: 1rem; /* Agrega espacio debajo del título */
+}
+
+.contenedor-texto p {
+    font-size: 1.6rem; /* Aumenta el tamaño de la letra del párrafo */
+    margin-top: 1rem; /* Asegura que haya espacio entre el título y el párrafo */
+    color: black;
 }
 
 @media (max-width: 768px) {
