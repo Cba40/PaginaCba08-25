@@ -1,53 +1,48 @@
-/* Estilos generales */
-body {
-    font-family: 'Poppins', 'Open Sans', sans-serif; 
-    color: #660000;
-    width: 100vw;
-    height: 100vh;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-.contenedor {
+.main-comtainer-nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; /* Ajusta el espacio entre elementos */
-    height: 100vh;
-    min-height: 100vh;
-    align-items: center; /* Centra verticalmente el contenido */
+    grid-template-columns: 50% 50%;
 }
 
-.contenedor-imagen, .contenedor-texto {
+.izquierda-nosotros {
     display: flex;
-    flex-direction: column; /* Para que el texto se apile debajo de la imagen en pantallas pequeñas */
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    width: 100%;
+    height: auto;
 }
 
-.contenedor-imagen img {
+.izquierda-nosotros img {
+
     max-width: 100%;                    
     max-height: 100%;                   
     object-fit: contain;                
     margin: 0.2rem 0 0.1rem 0;          
-    border-radius: 5rem; /* Redondea ligeramente los bordes */
+    border-radius: 5rem 5rem 5rem 5rem;       
     border: 0.3125rem solid #FAD201; 
-    border-bottom: 0.3125rem solid #FAD201;
 }
+
+.derecha-nosotros {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto; 
+/*
 
 .contenedor-texto {
     text-align: center;
 }
 
 .contenedor-texto h2 {
-    font-size: 2rem; /* Aumenta el tamaño de la letra del título */
-    margin-bottom: 1rem; /* Agrega espacio debajo del título */
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 .contenedor-texto p {
-    font-size: 1.6rem; /* Aumenta el tamaño de la letra del párrafo */
-    margin-top: 1rem; /* Asegura que haya espacio entre el título y el párrafo */
+    font-size: 1.6rem; 
+    margin-top: 1rem; 
     color: black;
 }
 
@@ -58,7 +53,8 @@ body {
     }
 
     .contenedor-texto {
-        font-size: 1.2rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        font-size: 1.2rem; 
         line-height: 1.5;
     }
 }
+*/
