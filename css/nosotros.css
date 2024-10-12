@@ -29,32 +29,34 @@
     align-items: center;
     width: 100%;
     height: auto; 
-/*
+}
 
-.contenedor-texto {
+.derecha-nosotros h1 {
     text-align: center;
+    font-size: 6rem;
+    color: #660000;
 }
 
-.contenedor-texto h2 {
-    font-size: 2rem; 
-    margin-bottom: 1rem; 
-}
-
+    
 .contenedor-texto p {
-    font-size: 1.6rem; 
-    margin-top: 1rem; 
-    color: black;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: black;
 }
-
+    
 @media (max-width: 768px) {
-    .contenedor {
-        grid-template-columns: 1fr;
-        height: auto;
-    }
-
-    .contenedor-texto {
-        font-size: 1.2rem; 
-        line-height: 1.5;
+    .main-container-nosotros {
+        grid-template-columns: 1fr; 
+        padding: 1rem;
+}
+    
+.izquierda-nosotros, .derecha-nosotros {
+     padding: 1rem 0;
+}
+    
+    
+.contenedor-texto p {
+    font-size: 1rem;
     }
 }
-*/
+    

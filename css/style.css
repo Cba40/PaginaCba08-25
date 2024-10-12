@@ -1,9 +1,9 @@
 @import url(header.css);
 @import url(main.css);
 @import url(footer.css);
-@import url(nosotros);
+@import url(nosotros.css);
 @import url(servicios.css);
-@import url(productos);
+@import url(productos.css);
 
 
 /* Reseteo de márgenes y relleno */
