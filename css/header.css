@@ -3,7 +3,7 @@ header {
     height: 7.5rem;
     border-bottom: 0.06rem solid #FAD201;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0 5%;
 }
@@ -16,56 +16,118 @@ nav {
 }
 
 nav img {
-    width: 10%; 
-    max-width: 150px; 
-    height: auto; 
+    width: 10%;
+    max-width: 150px;
+    height: auto;
 }
 
 ul {
     display: flex;
     list-style-type: none;
-    font-size: 1.5rem; 
-    padding: 0; 
-    margin: 0; 
-    justify-content: space-between; 
-    width: 70%;  
-  }
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 70%;
+}
 
 ul li a {
-    text-decoration: none; 
-    color: black; 
-    transition: color 0.3s ease; 
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
 }
 
 ul li a:hover {
-    color: #e5b800; 
+    color: #e5b800;
 }
 
 button {
-    padding: 0.625rem 1rem; 
-    background-color: #FAD201; 
-    border-radius: 0.625rem; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 0.625rem; 
-    color: black; 
-    font-size: 1rem; 
-    font-weight: 700; 
-    border: none; 
-    cursor: pointer; 
-    width: auto; 
-    height: auto; 
-    text-align: center; 
-    transition: background-color 0.3s ease; 
+    padding: 0.625rem 1rem;
+    background-color: #FAD201;
+    border-radius: 0.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #e5b800; 
+    background-color: #e5b800;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
 
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 7.5rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 2rem 0;
+    }
+
+    button {
+        display: none;
+    }
+}
 
 
 

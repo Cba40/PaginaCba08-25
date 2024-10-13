@@ -1,7 +1,8 @@
+/* Estilos para pantallas grandes */
 footer {
-    width: 100%; 
-    background-color: #FAD201; 
-    padding: 0.625rem 0; 
+    width: 100%;
+    background-color: #FAD201;
+    padding: 0.625rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,71 +11,149 @@ footer {
 
 section {
     width: 80%;
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
-    align-items: center; 
+    align-items: center;
 }
 
 section h2 {
-    font-size: 4vw; 
-    font-weight: 400; 
+    font-size: 4vw;
+    font-weight: 400;
     color: black;
     text-align: center;
-    margin: 0; 
-    margin-bottom: 1rem; 
+    margin: 0;
+    margin-bottom: 1rem;
 }
 
 section h2 span {
-    color: white; 
+    color: white;
 }
 
 section p {
     color: black;
     font-size: 1.5vw;
     font-weight: 400;
-    text-align: center; 
-    max-width: 90%; 
+    text-align: center;
+    max-width: 90%;
     margin: 0;
-   
 }
 
 footer nav {
-    width: 100%; 
+    width: 100%;
     display: flex;
-    justify-content: center; 
-    margin-top: 0.5rem; 
+    justify-content: center;
+    margin-top: 0.5rem;
 }
 
 footer ul {
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    color: black; 
-    font-size: 1.5vw; 
-    font-weight: 400; 
-    text-decoration: none; 
+    align-items: center;
+    color: black;
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-decoration: none;
     gap: 1rem;
 }
 
 footer ul li a img {
-    margin-right: 0.5rem; 
-    width: 1.5rem; 
-    height: 1.5rem; 
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 footer ul li a:hover {
-    color: white; 
+    color: white;
 }
 
-/* Cambia el color de los íconos al pasar el ratón */
-footer ul li a:hover img[src*='logo-whatsapp'] {
-    content: url('/imagenes/icons/logo-whatsapp-white.png'); 
+/* Media query para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 5vw;
+    }
+
+    section p {
+        font-size: 2vw;
+    }
+
+    footer ul {
+        font-size: 2vw;
+        gap: 1.5rem;
+    }
+
+    footer ul li a img {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
-footer ul li a:hover img[src*='logo-instagram'] {
-    content: url('/imagenes/icons/logo-instagram-white.png'); 
+/* Media query para pantallas de hasta 768px */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    section h2 {
+        font-size: 6vw;
+    }
+
+    section p {
+        font-size: 3vw;
+    }
+
+    footer ul {
+        font-size: 3vw;
+        gap: 2rem;
+    }
+
+    footer ul li a img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
-/*
-footer ul li a:hover img[src*='logo-instagram'] {
-    content: url('/imagenes/icons/logo-instagram-white.png'); 
-}*/
+
+/* Media query para pantallas de hasta 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+    section {
+        width: 95%;
+        padding: 1rem 0;
+    }
+
+    section h2 {
+        font-size: 7vw;
+        margin-bottom: 0.5rem;
+    }
+
+    section p {
+        font-size: 3.5vw;
+        margin-bottom: 1rem;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+    }
+
+    footer ul li a img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.5rem;
+    }
+}

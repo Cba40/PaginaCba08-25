@@ -19,3 +19,52 @@ html, body {
     height: 100vh;
     font-family: 'Poppins','Open Sans', sans-serif; 
 }
+
+/* Media query para dispositivos móviles (pantallas de 768px o menos) */
+@media (max-width: 768px) {
+    .main-comtainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .izquierda {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .derecha {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .imagen-derecha {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query para pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    .main-comtainer {
+        padding: 10px;
+    }
+    
+    .izquierda h1 {
+        font-size: 1.5rem;
+    }
+    
+    .izquierda h2 {
+        font-size: 1.2rem;
+    }
+    
+    .izquierda p {
+        font-size: 1rem;
+    }
+    
+    .imagen-derecha {
+        width: 100%;
+        height: auto;
+    }
+}
