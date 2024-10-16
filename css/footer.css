@@ -62,8 +62,17 @@ footer ul li a img {
     height: 1.5rem;
 }
 
+footer ul li a, 
+footer ul li a img {
+    transition: 0.3s ease;
+}
+
 footer ul li a:hover {
     color: white;
+}
+
+footer ul li a:hover img {
+    filter: invert(100%); 
 }
 
 /* Media query para pantallas de hasta 1024px */
