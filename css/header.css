@@ -41,6 +41,10 @@ ul li a:hover {
     color: #e5b800;
 }
 
+.active {
+    color: #e5b800;
+  }
+
 button {
     padding: 0.625rem 1rem;
     background-color: #FAD201;

@@ -35,6 +35,16 @@ window.onload = function() {
                 });
             }
 
+            // Marcar como activo el item del menú correspondiente
+            const currentPath = window.location.pathname;
+            const navItems = document.querySelectorAll('.nav-item');
+
+            navItems.forEach(item => {
+                if (item.getAttribute('href') === currentPath) {
+                    item.classList.add('active');
+                }
+            });
+
             // Cargar el contenido de footer.html
             return fetch('plantillas/footer.html');
         })

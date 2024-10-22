@@ -1,18 +1,19 @@
-/* Estilos generales */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
 .productos-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 1.5rem;
     padding: 2rem;
     justify-items: center; 
+}
+
+
+.productos-titulo {
+    grid-column: 1 / -1; 
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #660000;
 }
 
 .producto {
@@ -29,14 +30,13 @@ body {
     border-radius: 50%; 
     object-fit: cover; 
     display: block;
-    border: 0.3125rem solid #FAD201; 
-    border-bottom: 0.3125rem solid #FAD201;
+    box-shadow: 3px 3px 5px black;
 }
 
-.producto p {
+.producto h1 {
     text-align: center;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 /* Estilo para pantallas pequeñas */
