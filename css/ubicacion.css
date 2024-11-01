@@ -45,23 +45,23 @@
     border: 0.3125rem solid #FAD201; 
 }
 
-.descripcion h2 {
+.descripcion h1 {
     color: #660000;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     margin-bottom: 10px;
 }
 
-.descripcion h1 {
+.descripcion h2 {
     margin-bottom: 0.2rem; 
     margin-top: 0.5rem; 
-    font-size: 1.5rem; 
+    font-size: 1.875rem; 
     font-weight: bold; 
 }
 
 .descripcion p {
-    font-size: 1rem;
-    color: #333;
+    font-size: 1.125rem;
+    color: black;
     margin-bottom: 0.5rem;
     text-align: center;
 }
@@ -73,6 +73,36 @@
     }
 
     .mapa iframe {
+        height: 600px; 
+    }
+
+    .descripcion h1 {
+        font-size: 1.875rem;
+    }
+
+    .descripcion h2 { 
+        font-size: 1.625rem; 
+    }
+
+    .descripcion p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+   .mapa iframe {
         height: 300px; 
+    }
+
+    .descripcion h1 {
+        font-size: 1.5rem;
+    }
+
+    .descripcion h2 { 
+        font-size: 1.25rem; 
+    }
+
+    .descripcion p {
+        font-size: 0.875rem;
     }
 }

@@ -1,55 +1,33 @@
 .main-container-nosotros {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    max-width: 100vw; /* Limita el ancho total a la pantalla */
+    overflow: hidden; /* Evita el desbordamiento */
 }
 
 .izquierda-nosotros {
     display: grid;
     width: 100%;
+    height: auto;
     margin: 0.5rem;
+    padding: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+    box-sizing: border-box;
 }
 
-#img1 {
-    width: 250px; 
-    height: 250px;    
-    object-fit: cover;           
-    border-radius: 50%;       
-    border: 0.3125rem solid #FAD201;  
-    justify-self: center; 
-    align-self: center;
-}
-
-#img2 {
-    width: 250px; 
-    height: 250px;    
-    object-fit: cover;           
-    border-radius: 50%;       
-    border: 0.3125rem solid #FAD201; 
-    justify-self: center; 
-    align-self: center;
-}
-
-#img3 {
-    width: 250px; 
-    height: 250px;    
-    object-fit: cover;           
-    border-radius: 50%;       
-    border: 0.3125rem solid #FAD201; 
-    justify-self: center; 
-    align-self: center;
-}
-
-#img4 {
-    width: 250px; 
-    height: 250px;    
-    object-fit: cover;           
-    border-radius: 50%;       
-    border: 0.3125rem solid #FAD201; 
-    justify-self: center; 
+#img1, #img2, #img3, #img4 {
+    width: 180px; /* Tamaño inicial */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; /* Asegura que la imagen sea circular */
+    border: 0.3125rem solid #FAD201;
+    justify-self: center;
     align-self: center;
 }
 
@@ -59,20 +37,20 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: auto; 
+    height: auto;
+    box-sizing: border-box;
 }
 
-.derecha-nosotros h1 {
-    font-size: 2.5rem;
+.nosotros-d-h1 {
+    font-size: 4.5rem;
     font-weight: 700;
     color: #660000;
     text-align: center;
     width: 100%;
 }
 
-    
-.derecha-nosotros p {
-    font-size: 1.5vw;
+.nosotros-d-p {
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: justify;
     color: black;
@@ -82,17 +60,47 @@
 /* Media query para pantallas pequeñas (celulares o tablets) */
 @media (max-width: 768px) {
     .main-container-nosotros {
-        grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
-        grid-template-rows: auto auto; /* Se añade esta línea para organizar filas */
+        grid-template-columns: 1fr;
+        grid-template-areas: "escritura""imagenes";
         padding: 1rem;
     }
 
-    .izquierda-nosotros, 
     .derecha-nosotros {
-        padding: 1rem 0;
+        grid-area: escritura;
+        width: 100%;
     }
 
-    .contenedor-texto p {
-        font-size: 1.5vw;
+    .nosotros-d-h1 {
+        font-size: clamp(0.5rem, 2.5rem, 4.5rem);
+    }
+
+    .nosotros-d-p {
+        font-size: clamp(0.75rem, 1rem, 1.2rem);
+    }
+
+    .izquierda-nosotros {
+        grid-area: imagenes;
+    }
+}
+
+/* Media query específica para pantallas extremadamente pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    .nosotros-d-h1 {
+        font-size: clamp(1rem, 2rem, 3rem); /* Reduce el tamaño del título */
+    }
+
+    .nosotros-d-p {
+        text-align: justify;
+        font-size: clamp(0.6rem, 0.8rem, 1rem);
+        margin: 0.5rem;
+    }
+
+    .derecha-nosotros {
+        padding: 0.5rem;
+    }
+
+    #img1, #img2, #img3, #img4 {
+        width: 120px; /* Tamaño reducido para pantallas pequeñas */
+        height: 120px;
     }
 }
