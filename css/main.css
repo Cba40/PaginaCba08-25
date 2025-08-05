@@ -33,24 +33,29 @@
 }
 
 .izquierda h1 {
-    font-size: 8vw;
-    color: #1B9AAA;
+    text-align: center;
+    font-size: 5vw; /* Ajusté el tamaño */
+    color: #0F2948; /* Color modificado */
     margin-bottom: 0.625rem;
+    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
+    font-weight: 700; /* Añadí el peso de la fuente */
 }
 
 .izquierda h2 {
-    text-align: start;
-    font-size: 2.66vw;
-    font-weight: 700;
-    color: #0D1B2A;
+    text-align: center;
+    font-size: 3vw; /* Ajusté el tamaño */
+    font-weight: 600;
+    color: #1B9AAA; /* Color modificado */
     margin-bottom: 0.625rem;
+    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
 }
 
 .izquierda p {
-    text-align: justify;
+    text-align: center;
     color: #333;
-    font-size: 1.6vw;
+    font-size: 1.4vw; /* Ajusté el tamaño */
     line-height: 1.6;
+    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
 }
 
 /* ===== RESPONSIVE ===== */
@@ -78,7 +83,7 @@
 
     .izquierda h2 {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .izquierda p {
