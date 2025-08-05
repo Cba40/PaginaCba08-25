@@ -1,4 +1,4 @@
-.productos-grid {
+.portafolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
     gap: 1.5rem;
@@ -7,7 +7,7 @@
 }
 
 
-.productos-titulo {
+.protafolio-titulo {
     grid-column: 1 / -1; 
     text-align: center;
     font-size: 4.5rem;
@@ -16,7 +16,7 @@
     color: #660000;
 }
 
-.producto {
+.portafolio {
     text-align: center;
     font-weight: bold;
     display: flex;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.producto img {
+.portafolio img {
     width: 20rem; 
     height: 20rem; 
     border-radius: 50%; 
@@ -49,7 +49,7 @@
         font-size: clamp(0.5rem, 2.5rem, 5rem);
     }
 
-    .producto img {
+    .portafolio img {
         width: 15rem; 
         height: 15rem; 
         box-shadow: 1.5px 1.5px 3px black;
@@ -62,15 +62,15 @@
 
 /* Estilo para pantallas pequeñas */
 @media (max-width: 480px) {
-    .productos-grid {
+    .portafolio-grid {
         grid-template-columns: 1fr; 
     }
 
-    .productos-titulo {
+    .portafolio-titulo {
         font-size: clamp(0.25rem, 1.75rem, 2.5rem);
     }
 
-    .producto img {
+    .portafolio img {
         width: 10rem; 
         height: 10rem; 
         box-shadow: 1px 1px 1.5px black;

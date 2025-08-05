@@ -1,5 +1,5 @@
 /* Contenedor principal de ubicacion */
-.ubicacion-container {
+.contacto-container {
     max-width: 1600px; /* Aumenta el valor para hacer más ancho el contenedor */
     width: 100%; /* O utiliza un ancho del 100% para que ocupe toda la pantalla */
     margin: 0 auto;
@@ -10,7 +10,7 @@
 }
 
 /* Grid de ubicacion */
-.grid-ubicacion {
+.grid-contacto {
     display: grid;
     grid-template-columns: 2fr 1fr; 
     width: 100%;

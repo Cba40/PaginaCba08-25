@@ -1,125 +1,75 @@
-/* --- FOOTER REDISEÑADO CBA 4.0 --- */
-footer {
-    width: 100%;
-    background-color: #0D1B2A; /* Azul oscuro */
-    color: #FFFFFF;
-    padding: 2rem 1rem;
+.footer {
+    background-color: #0D1B2A;
+    color: rgb(94, 60, 241);
+    padding: 20px 40px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     font-family: 'Inter', sans-serif;
 }
 
-.section-footer {
-    max-width: 1200px;
-    margin-bottom: 1rem;
-}
-
-.h2-footer {
-    font-size: 2.25rem;
-    font-weight: 600;
-    color: #FFFFFF;
-    margin-bottom: 0.5rem;
-}
-
-.h2-footer span {
-    color: #1B9AAA; /* Turquesa */
-}
-
-.p-footer {
-    font-size: 1.125rem;
-    color: #E0E1DD;
-    margin-bottom: 1rem;
-}
-
-.footer-nav {
-    margin-top: 1rem;
-}
-
-.footer-ul {
+.footer-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.footer-a {
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 2rem;
+    margin: 5px 0;
     display: flex;
-    align-items: center;
-    font-size: 1.125rem;
-    color: #E0E1DD;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    align-items: center; /* Alinear icono y texto */
 }
 
-.footer-a:hover {
-    color: #1B9AAA;
+.icon {
+    margin-right: 10px;
 }
 
-.footer-img {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
-    filter: brightness(0) invert(1); /* Iconos blancos */
+.phone-icon,
+.email-icon {
+    width: 25px;
+    height: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 50px;
+}
+
+.social-icon {
+    width: 70px;
+    height: 70px;
     transition: filter 0.3s ease;
 }
 
-.footer-a:hover .footer-img {
-    filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(140deg); /* Turquesa hover */
+.social-icon:hover {
+    filter: brightness(0) invert(1);
 }
 
 .copyright {
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #A9A9A9;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Espacio debajo del copyright */
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .section-footer {
-        padding: 0 1rem;
-    }
-
-    .h2-footer {
-        font-size: 1.875rem;
-    }
-
-    .p-footer {
-        font-size: 1rem;
-    }
-
-    .footer-ul {
+    .footer-content {
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
     }
 
-    .footer-a {
-        font-size: 1rem;
-    }
-
+    .contact-info,
+    .social-icons,
     .copyright {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .h2-footer {
-        font-size: 1.5rem;
-    }
-
-    .p-footer {
-        font-size: 0.9rem;
-    }
-
-    .footer-a {
-        font-size: 0.9rem;
-    }
-
-    .copyright {
-        font-size: 0.75rem;
+        margin-bottom: 20px;
     }
 }
