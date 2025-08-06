@@ -1,0 +1,97 @@
+/* Contenedor principal de servicios */
+.servicios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Título de servicios */
+.servicios-titulo {
+    font-size: 4.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #660000;
+    text-align: center;
+    width: 100%;
+}
+
+/* Grid de servicios */
+.grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 75%;
+    
+}
+
+/* Estilos para cada servicio */
+.servicio {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #fad201;
+    border-top: 0.02rem solid #fad201; 
+    border-left: 0.02rem solid #fad201;
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .servicios-titulo {
+        font-size: clamp(0.5rem, 2.5rem, 4.5rem);
+    }
+    
+    .grid-servicios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 60%;
+    }
+
+    .servicio {
+        border-radius: 10px;
+        box-shadow: 1.5px 1.5px 3px #fad201;
+    }
+
+    .servicio p {
+        font-size: clamp(0.5rem, 0.75rem, 1rem);
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+    .servicios-titulo {
+        font-size: clamp(0.25rem, 1.5rem, 3.5rem);
+    }
+    
+    .grid-servicios {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 50%;
+    }
+
+    .servicios {
+        box-shadow: 1.5px 1.5px 3px #fad201;
+    }
+
+    .servicio p {
+        font-size: 0.875rem;
+    }
+}
+
