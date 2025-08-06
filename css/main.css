@@ -30,32 +30,59 @@
 .izquierda {
     flex-direction: column;
     padding: 1.25rem;
+    margin: 0 auto; /* Centra horizontalmente */
 }
 
 .izquierda h1 {
     text-align: center;
-    font-size: 5vw; /* Ajusté el tamaño */
-    color: #0F2948; /* Color modificado */
-    margin-bottom: 0.625rem;
-    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
-    font-weight: 700; /* Añadí el peso de la fuente */
+    font-size: 5vw;
+    color: #0F2948;
+    margin-bottom: 1.25rem; /* Ajusté el espacio debajo */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .izquierda h2 {
     text-align: center;
-    font-size: 3vw; /* Ajusté el tamaño */
+    font-size: 3vw;
     font-weight: 600;
-    color: #1B9AAA; /* Color modificado */
-    margin-bottom: 0.625rem;
-    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
+    color: #1B9AAA;
+    margin-bottom: 1.25rem; /* Ajusté el espacio debajo */
+    font-family: 'Inter', sans-serif;
 }
 
 .izquierda p {
     text-align: center;
     color: #333;
-    font-size: 1.4vw; /* Ajusté el tamaño */
+    font-size: 1.4vw;
     line-height: 1.6;
-    font-family: 'Inter', sans-serif; /* Añadí la familia de fuentes */
+    margin-bottom: 2rem; /* Ajusté el espacio debajo */
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-servicios {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #1B9AAA;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem; /* Ajusté el espacio arriba */
+}
+
+.btn-servicios:hover {
+    background-color: #0F2948;
+}
+
+.btn-servicios svg {
+    width: 24px;
+    height: 24px;
 }
 
 /* ===== RESPONSIVE ===== */

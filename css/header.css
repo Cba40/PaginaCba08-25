@@ -1,3 +1,4 @@
+/* Estilos Generales */
 .header {
     width: 100%;
     background-color: #FFFFFF;
@@ -52,6 +53,20 @@
     color: #1B9AAA;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #0D1B2A;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
 .social-icons-header {
     display: flex;
     align-items: center;
@@ -59,11 +74,72 @@
 }
 
 .social-icon-header {
-    width: 34px; /* Ajusta el tamaño aquí si es necesario */
+    width: 34px;
     height: 34px;
     transition: filter 0.3s ease;
 }
 
 .social-icon-header:hover {
     filter: brightness(0) invert(1);
+}
+
+/* Animaciones */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Clase para el menú activo */
+.nav-links.nav-active {
+    display: flex;
+}
+
+/* Clase para el menú hamburguesa activo */
+.hamburger.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.toggle .line2 {
+    opacity: 0;
+}
+
+.hamburger.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #FFFFFF;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+
+    .social-icons-header {
+        display: none;
+    }
 }
