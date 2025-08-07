@@ -17,5 +17,17 @@
 html, body {
     width: 100vw;
     height: 100vh;
-    font-family: 'Poppins','Open Sans', sans-serif; 
+    font-family: 'Poppins', 'Open Sans', sans-serif; 
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro para contraste */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #1B9AAA; /* Color de enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
