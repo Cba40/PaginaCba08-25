@@ -15,10 +15,23 @@
 /* Grid de tarjetas de servicio */
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr; /* Móvil: 1 columna */
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tablets y medianos: 2 columnas */
+  }
+}
+
+@media (min-width: 1200px) {
+  .servicios-grid {
+    grid-template-columns: repeat(3, 1fr); /* Escritorio: 3 columnas */
+  }
 }
 
 /* Tarjeta de servicio */
@@ -79,7 +92,7 @@
   }
 
   .servicio {
-    box-shadow: 1.5px 1.5px 3px #fad201;
+    box-shadow: 1.5px 1.5px 3px #187b8b;
   }
 
   .servicio p {
