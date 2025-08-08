@@ -54,10 +54,11 @@
 .izquierda p {
     text-align: center;
     color: #333;
-    font-size: 1.4vw;
     line-height: 1.6;
-    margin-bottom: 2rem; /* Ajusté el espacio debajo */
     font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  
 }
 
 /* ===== BOTÓN PARA SERVICIOS ===== */

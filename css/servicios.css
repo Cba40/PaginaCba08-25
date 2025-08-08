@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+.servicios h1 {
+  text-align: center;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    color: #0F2948;
+    margin-bottom: 1.25rem; /* Ajusté el espacio debajo */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
 .servicios h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -80,7 +89,7 @@
 }
 
 .boton:hover {
-  background-color: #125e69;
+  background-color:  #0F2948; /* Color al pasar el ratón */
 }
 
 /* MEDIA QUERIES RESPONSIVE */
